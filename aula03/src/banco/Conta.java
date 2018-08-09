@@ -18,6 +18,10 @@ public class Conta {
         return saldo;
     }
 
+    public double getSaldoLimite(){
+        return this.getSaldo()+this.getLimite();
+    }
+    
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
@@ -44,6 +48,11 @@ public class Conta {
 
     public Agencia getAgencia() {
         return agencia;
+    }
+
+    @Override
+    public String toString() {
+        return "Conta{" + "codigo=" + codigo + ", saldo=" + saldo + ", limite=" + limite + ", cliente=" + cliente + ", agencia=" + agencia + '}';
     }
     
 }

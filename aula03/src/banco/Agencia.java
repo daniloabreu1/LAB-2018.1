@@ -45,6 +45,11 @@ public class Agencia {
     public int getNumero() {
         return numero;
     }
+
+    @Override
+    public String toString() {
+        return "Agencia{" + "nome=" + nome + ", cidade=" + cidade + ", uf=" + uf + ", numero=" + numero + '}';
+    }
     
     
 }

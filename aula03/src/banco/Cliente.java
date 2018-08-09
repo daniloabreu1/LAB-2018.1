@@ -45,5 +45,11 @@ public class Cliente {
     public static int getQuantidade() {
         return qtd;
     }
+
+    @Override
+    public String toString() {
+        return "Código:"+codigo+ "\nNome: "+nome + "\nRG: " + rg + "\nCPF: " + cpf;
+    }
+    
     
 }
