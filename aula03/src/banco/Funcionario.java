@@ -1,6 +1,11 @@
 package banco;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -47,8 +52,13 @@ public class Funcionario {
         return dataAdmin;
     }
 
-    public void setDataAdmin(Calendar dataAdmin) {
-        this.dataAdmin = dataAdmin;
+    public void setDataAdmin(String dataAdmin) {
+        SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            this.dataAdmin.setTime((Date)f.parse(dataAdmin));
+        } catch (ParseException ex) {
+            Logger.getLogger(Funcionario.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     public static double getSalario() {
