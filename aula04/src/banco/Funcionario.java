@@ -1,12 +1,5 @@
 package banco;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author Danilo Abreu
@@ -15,7 +8,6 @@ public class Funcionario {
     private static int qtd=0;
     private final int codigo;
     private String nome, rg, cpf;
-    private Calendar dataAdmin;
     private static double salario=0, bonus=0, vale=0;
     private Agencia agenciaTrabalha;
     
@@ -46,19 +38,6 @@ public class Funcionario {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public Calendar getDataAdmin() {
-        return dataAdmin;
-    }
-
-    public void setDataAdmin(String dataAdmin) {
-        SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            this.dataAdmin.setTime((Date)f.parse(dataAdmin));
-        } catch (ParseException ex) {
-            Logger.getLogger(Funcionario.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
 
     public static double getSalario() {
