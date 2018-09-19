@@ -50,7 +50,7 @@ public class Testes {
             System.out.println(ex.getMessage());
         }
         try {
-            System.out.println(lista.buscarCliente("maria").getNome());
+            System.out.println(lista.buscarCliente("jose").getNome());
         } catch (Excecoes ex) {
             System.out.println(ex.getMessage());
         }

@@ -7,6 +7,7 @@ package exercicio01;
  */
 
 
+import exercicio01.Excecoes.LimiteCadastro;
 import exercicio01.Excecoes.NaoCadastrado;
 
 /**
@@ -22,7 +23,7 @@ public class Cadastrar {
             clientes[i]=c;
             i++;
         }else{
-            throw new Excecoes.LimiteCadastro();
+            throw new LimiteCadastro();
         }      
     }
     
