@@ -18,9 +18,9 @@ public class Arquivo {
         System.out.println("DIGITE O NOME DO ARQUIVO ");
         s = new Scanner(System.in);
         nome = s.next();
-		// String caminho
+        // String caminho
         // ="Home\"+System.getProperty("user.name").toString()+"\Desktop\"+nome+".txt";
-        String caminho = "C:\\Users\\" + System.getProperty("user.name").toString() + "\\Desktop\\" + nome + ".txt";
+        String caminho = "C:\\Users\\" + System.getProperty("user.name") + "\\Desktop\\" + nome + ".txt";
         return caminho;
     }
 
@@ -98,27 +98,15 @@ public class Arquivo {
     void removerArquivo() {
         String caminho = arquivoNome();
         File arquivo = new File(caminho);
-        try {
-
-            if (arquivo.exists()) {
-                FileWriter escritor = new FileWriter(caminho, true);
-                // arquivo.write(conteudo+"\n");
-                PrintWriter pw = new PrintWriter(escritor);
-                pw.println("");
-                pw.close();
-
-            } else {
-                System.out.println("ARQUIVO NAO ENCONTRADO");
-            }
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-
-        arquivo.delete();
         if (arquivo.exists()) {
-            System.out.println("ARQUIVO NÃO REMOVIDO...");
+            arquivo.delete();
+            if (arquivo.exists()) {
+                System.out.println("ARQUIVO NÃO REMOVIDO...");
+            } else {
+                System.out.println("ARQUIVO REMOVIDO...");
+            }
         } else {
-            System.out.println("ARQUIVO REMOVIDO...");
+            System.out.println("ARQUIVO NAO ENCONTRADO");
         }
 
     }
