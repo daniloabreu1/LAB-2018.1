@@ -21,7 +21,7 @@ public class Intermediaria {
     private static List<String> lista = new ArrayList<>();
 
     public static void criarArquivo() {
-        arq = new Arquivo("C:\\Users\\" + System.getProperty("user.name") + "\\Desktop\\aula17.txt");
+        arq = new Arquivo("C:\\Users\\" + System.getProperty("user.name") + "\\Desktop\\aula18.txt");
     }
 
     public static void inserirCliente() {
