@@ -35,7 +35,12 @@ public class Intermediaria {
         if(o==1){
             c.setSexo("masculino");
         }else{
-            c.setSexo("feminino");
+            if(o==2){
+                c.setSexo("feminino");
+            }else{
+                System.out.println("Sexo invalido");
+                c.setSexo("");
+            }
         }
         System.out.println("");
         arq.escreverArquivo(c.toString());
