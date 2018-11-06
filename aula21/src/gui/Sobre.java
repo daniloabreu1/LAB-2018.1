@@ -59,7 +59,7 @@ public class Sobre extends javax.swing.JDialog {
         jTextArea1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Programa de manipulação de arquivos desenvolvido nas aulas de Laboratório de Programação. Turma 2017.2.\nCurso de Computação, UEPB, Campina Grande - Paraíba.\n\nProfessor Danilo Abreu");
+        jTextArea1.setText("Programa de manipulação de arquivos desenvolvido nas aulas de Laboratório de Programação. Turma 2018.1.\nCurso de Computação, UEPB, Campina Grande - Paraíba.\n\nProfessor Danilo Abreu");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 

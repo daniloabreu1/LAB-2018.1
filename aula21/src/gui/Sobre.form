@@ -119,7 +119,7 @@
                 </Property>
                 <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Programa de manipula&#xe7;&#xe3;o de arquivos desenvolvido nas aulas de Laborat&#xf3;rio de Programa&#xe7;&#xe3;o. Turma 2017.2.&#xa;Curso de Computa&#xe7;&#xe3;o, UEPB, Campina Grande - Para&#xed;ba.&#xa;&#xa;Professor Danilo Abreu"/>
+                <Property name="text" type="java.lang.String" value="Programa de manipula&#xe7;&#xe3;o de arquivos desenvolvido nas aulas de Laborat&#xf3;rio de Programa&#xe7;&#xe3;o. Turma 2018.1.&#xa;Curso de Computa&#xe7;&#xe3;o, UEPB, Campina Grande - Para&#xed;ba.&#xa;&#xa;Professor Danilo Abreu"/>
                 <Property name="wrapStyleWord" type="boolean" value="true"/>
               </Properties>
             </Component>
